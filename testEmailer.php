@@ -16,7 +16,7 @@
 
     $customerMail->getEmailMessage();
 
-    $customerMail->setSenderAddress("mkedmonds@dmacc.edu");
+    $customerMail->setSenderAddress("contact@madelineedmonds.net");
 
     $customerMail->getSenderAddress();
 
