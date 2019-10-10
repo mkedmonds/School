@@ -22,6 +22,7 @@
       $inEmail = $_POST["textfield3"];
       $inRegistration = $_POST["select"];
       $inBadge = $_POST["radio"];
+      $inHidden = $_POST["hidden"];
       $inSpecial = $_POST["textarea"];
 
       if ("radio" == $inBadge) {
@@ -44,7 +45,9 @@
         
       }
 
-      
+      if($inHidden != ""){
+        echo "<h2>Scammer!</h2>";
+      }
       
 
        
@@ -77,6 +80,10 @@
 	font-style:italic;	
 }
 
+.hide {
+  display: none;
+}
+
 </style>
 </head>
 
@@ -100,6 +107,10 @@
       <p>
         <label for="textfield2">Phone Number:</label>
         <input type="text" name="textfield2" id="textfield2" value="<?php echo $inPhone ?>" >
+      </p>
+      <p class="hide">
+        <label for="textFieldHidden">Enter Name or Number</label>
+        <input type="text" name="hidden" id="hidden" value="<?php echo $inHidden ?>">
       </p>
       <p>
         <label for="textfield3">Email Address: </label>
