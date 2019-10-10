@@ -22,7 +22,6 @@
       $inEmail = $_POST["textfield3"];
       $inRegistration = $_POST["select"];
       $inBadge = $_POST["radio"];
-      $inMeals = $_POST["checkbox"];
       $inSpecial = $_POST["textarea"];
 
       if ("radio" == $inBadge) {
